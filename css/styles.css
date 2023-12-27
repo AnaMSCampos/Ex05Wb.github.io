@@ -1,0 +1,491 @@
+/* Ana Campos, up202107849, LDC, 2022/2023 */
+
+/* Letra-Corpo: */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Letra-H1,H2: */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/* Gifs:
+https://media3.giphy.com/media/jOc4ZOiTbPEvDveg86/giphy.gif?cid=ecf05e47x6suz39edqj87nuppo285yl63bcygggsrrsof3oc&ep=v1_gifs_related&rid=giphy.gif&ct=s
+
+*/
+
+:root{
+    --primeira-cor: white;
+    --segunda-cor: rgb(255, 213, 0);
+    --terceira-cor: rgb(60, 152, 122);
+    --gif: url("https://goodsidehealth.com/wp-content/uploads/2022/11/GSH_Animation_MentalHealth_RGB_RotatingSun_DRAFT.gif");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Versão Mobile */
+html,body{
+    width: 100%;  /*usa 100% do viewport (podia estar a trabalhar com vw) */
+    height: 100%;
+    font-size: 1.1em;
+    background-color: var(--primeira-cor);
+}
+
+#page{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* medida da altura que obdece diretamente ao viewport (para a largura é vw) */
+    background-color:transparent;
+}
+
+header{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+nav{
+    display: block;
+    position: relative;
+    /* Preferível NÃO USAR os Floats */
+    float: right;
+    min-width: 50px;
+    max-width: 200px;
+    height: 2.5em;
+    background-color: var(--segunda-cor);
+    color: white;
+    font-weight:bolder;
+    border-radius: 15px;
+    box-shadow: 5px 5px aquamarine;
+    text-align: center;
+    z-index: 10;
+    box-sizing: border-box;
+    top: 20px;
+    right: 20px;
+
+}
+
+nav:hover{
+    background-image: var(--gif);
+    background-size: cover;
+    color: white;
+    transform: scale(1.1) ;
+}
+
+nav a:hover{
+    color: var(--segunda-cor);
+}
+
+
+/* Espaço para colocar imagem ou simplesmente deixar uma cor */
+figure{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* mudar cor */
+    background-color: aquamarine; 
+
+}
+
+h1{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    font-size: 19vw;
+    text-shadow: 2px 10px  aquamarine;
+    color: var(--segunda-cor);
+    line-height: 1.2em;
+}
+
+h2{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px 30px 20px ;
+    text-align: left;
+
+    font-family: 'Archivo Black', 'Arial Narrow', Arial, sans-serif;
+    color: aquamarine;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    background-color: var(--primeira-cor);
+    opacity: 0.8;
+}
+
+h3{
+    font-family: 'Archivo Black', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+    /* Faz a linha abaixo */
+    border-bottom: 6px dotted var(--segunda-cor);
+    line-height: 1.3em;
+}
+
+
+/* logoooo */
+#logo{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 20;
+    width: 100px;
+    background-color: transparent;
+
+    animation-name: logo;
+    animation-duration: 1s;
+}
+
+@keyframes logo{
+    0% {top:-100px}
+    100%{top:0px}
+}
+
+#logo img{
+    width: 100px;
+    height: auto;
+}
+
+#logo:hover{
+    transform: rotate( 180deg) scale(1.1);
+}
+
+/* Navegador */
+nav > p {
+    margin: 0.5em 1.5em;
+}
+
+ul{
+    display: none;
+    position: relative;
+    width: 100%;
+
+    text-transform: none;
+    font-size: 0.75em;
+    letter-spacing: 0.075em;
+    font-weight: 200;
+
+    background-color:rgb(60, 152, 122);
+    border-radius: 15px;
+    font-family: 'Archivo Black', 'Arial Narrow', Arial, sans-serif;
+}
+
+li{
+    line-height: 2em;
+    border-top: 3px dotted var(--primeira-cor);
+}
+
+a{
+    text-decoration: none;
+    color: var(--segunda-cor);
+}
+
+nav a{
+    color: white;
+}
+
+nav:hover ul{
+    display: block;
+}
+
+/* Main */
+
+main{
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+section{
+    display: inline-block;
+    padding: 30px;
+
+}
+
+section:nth-child(2), section:nth-child(4){
+    background-color: aquamarine;
+}
+
+
+section > p{
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+    color: var(--terceira-cor);
+    font-size: 0.8em;
+    text-transform: none;
+    line-height: 1.5em;
+
+    padding-top: 10px;
+}
+
+section a:hover, section h3:hover{
+    border-color: var(--terceira-cor);
+    color: var(--terceira-cor);
+}
+
+section:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+
+section:nth-child(2), section:nth-child(4){
+    transform: rotate(-5deg);
+}
+
+section:nth-child(1), section:nth-child(3){
+    transform: rotate(5deg);
+}
+
+
+.menu p{
+    text-align: center;
+}
+/* footer */
+footer{
+    font-family: 'Archivo Black', Courier, monospace;
+    color: var(--terceira-cor);
+    font-size: small;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-image: var(--gif);
+    background-size: 20%;
+
+}
+
+/* botão do topo */
+#link-topo {
+    color: var(--primeira-cor);
+    background-color: var(--segunda-cor);
+    padding: 5px 5px 10px 10px;
+    position: fixed;
+    text-align: center;
+    right:15px;
+    bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 3px  aquamarine;
+    z-index: 90;
+}
+
+#link-topo:hover{
+    background-color: var(--terceira-cor);
+}
+
+/* Extras */
+/* Scroll */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    top: 10px;
+}
+
+/* barra do Scroll */
+::-webkit-scrollbar-track{
+    background-color: aquamarine;
+    border-radius: 10px;
+
+}
+
+/* botão do scroll */
+::-webkit-scrollbar-thumb{
+    background-color: var(--segunda-cor);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--terceira-cor);
+}
+
+/* mouse */
+html{
+    cursor: url('../assets/')default;
+}
+
+
+
+
+/* START S-E-M-P-R-E pelo o ecrã mais pequeno e a aprtir daí adicionar conteúdo (+ fácil) */
+
+@media screen and (min-width: 600px){
+    html,body {
+        background-color:transparent;
+    }
+    
+    #page{
+        width: 88%;
+        height: 80vh;
+        margin:0 auto;
+        background-color: var(--primeira-cor);
+    }
+
+    #logo{
+        transform: rotate(10deg);
+        animation: rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+        0%{ 
+            transform: translate(0, 0);
+        }
+
+        50%{
+            transform: rotate(180deg) translate(100%,100%);
+        }
+
+        100%{
+            transform: rotate(360deg);
+        }
+
+    }
+
+
+    /* Nav */
+    nav{
+        display: block;
+        position: relative;
+        float: none;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+        min-width: 100%;
+        right: 0;
+    
+        transform: rotate(5deg);
+        border-radius: 20px;
+        box-shadow: 5px 20px aquamarine;
+
+    }
+
+    nav p{
+        display: none;
+        max-width: 25px;
+    }
+
+    nav ul{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: var(--segunda-cor);
+        border-radius: 20px;
+    }
+
+    nav ul li{
+        display: inline-block;
+        border:  none;
+        background-color: none;
+        padding-right: 5em;
+   
+    }
+
+    nav a:hover{
+        color: var(--terceira-cor);
+    }
+
+    nav:hover{
+        transform: rotate(5deg);
+    }
+
+    nav li:hover{
+        transform: scale(20deg);
+    }
+
+    nav ul:hover{
+        background-image: var(--gif);
+        background-size: contain;
+    }
+
+    h1{
+        bottom: -19vh;
+        left:-30px;
+        font-size: 19vh;
+        color: var(--segunda-cor);
+        width: 100%;
+        transform: rotate(-5deg);
+        text-shadow: 5px 15px aquamarine;
+        align-items: center;
+    }
+
+    
+    /* main */
+    main{
+        padding-top: 100px;
+    }
+
+    h2{
+        margin-top: 40px;
+        background-color: var(--segunda-cor);
+        opacity: 0.9;
+        text-align: right;
+        border-radius: 20px;
+        width: 50vh;  
+        transform: rotate(-5deg);
+        color: var(--primeira-cor);
+      
+    }
+
+
+    section{
+        display: inline-block;
+        padding-top: 20px;
+        margin: 0 1.5%;
+        width: 45%;
+        vertical-align: top;
+    }
+
+   section:nth-child(1), section:nth-child(2), section:nth-child(3), section:nth-child(4){
+        transform: rotate(0deg) ;
+    }
+
+    section:nth-child(2){
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    section:nth-child(4){
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    section:nth-child(1):hover, section:nth-child(3):hover{
+        transform: scale(1.1) rotate(-5deg);
+    }
+
+    section:nth-child(2):hover, section:nth-child(4):hover{
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    section:nth-child(2):hover{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 10px 10px var(--terceira-cor
+        );
+
+    }
+
+    section:nth-child(4):hover{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 10px 10px var(--terceira-cor
+        );
+    }
+
+    section a{
+        color: var(--segunda-cor);
+    }
+
+    section p{
+        color: var(--terceira-cor);
+        font-size: 0.7em;
+    }
+
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+ <head>
+    <a href="index.html">
+        <title> Groot, Rei Groot</title>
+    </a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ana Campos">
+    <meta name="description" content="Groot era um Colossus Floral do Planeta X, a capital dos mundos das plantas." />
+    <meta name="Keywords" content="Groot, Guardiões da Galáxia, Marvell, FBAUP">
+    <meta name="date.created" content="2023-09-XX">
+    <meta name="date.updated" content="2023-10-11">
+
+
+    <!-- Apesar de já o ter desde o Ex.1, eu quis adicionar um ícone, contudo faço-o recorrendo a uma imagem da Internet -->
+    <link rel="icon" sizes="72x72" href="images/icon.png" type="image/x-icon" />
+
+    <!-- Abaixo encontra-se a tag que faz ponte entre este file com o externo de Css -->
+    <link rel="stylesheet" href="css/styles.css">
+ </head>
+
+ <body id="top" id="fundo1">
+
+
+    <header class="fundo">
+        <!-- logo............................ -->
+        <img src="graphics/GráficoVetorial.svg" alt="Guardians of Galaxy">
+        <!-- título da página........................... -->
+        <h1> Groot, Rei Groot</h1>
+
+        <nav>
+           <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropb"><a href="index.html">Biografia</a></button>
+                        
+                         <div class="dropd-content">
+                            <a href="index.html#guardiões">Guardiões da Galáxia</a>
+                         </div>
+                    </div>
+                    
+                    <a href="#poderes">Poderes e Habilidades</a>
+                    
+                    <div class="dropdown">
+                        <button class="dropb"><a href="midias.html">Em outras mídias</a></button>
+                        
+                            <div class="dropd-content">
+                                <a href="midias.html#tv">Televisão</a>
+                                <a href="midias.html#filmes">Filmes</a>
+                                <a href="midias.html#trailers">Trailers dos filmes</a>
+                            </div>
+                    </div>   
+                    
+                    <a href="ediçoes.html">Edições Colecionáveis</a>
+                    <a href="about.html">About</a>
+                </ul>
+            </div>
+
+        </nav>
+
+        <hr>
+        <!-- manter o header igual para todas as páginas(ñ esquecer) e colocá-lo sticky 
+        contudo ir mudando os ids por exemplo na biografia deixar a loaclização assim, mas depois mudar nas outras-->
+    </header>
+
+    <main>
+        <a id="link-topo" href="#" title="Topo">&#9650;</a>
+
+        <article id="poderes">
+            <h2>Poderes e Habilidades</h2>
+            <p>
+                Groot é uma árvore alienígena poderosa, ele possui várias habilidades físicas semelhantes a uma árvore
+                normal e grande, e entre elas uma força maior que o normal, capaz de vencer lutando mão-a-mão e derrubar
+                e quebrar qualquer objeto. Groot também pode se regenerar e reconstruir membros feridos.
+                <del>
+                    E além disso Groot também pode fazer crescer seus membros em formas de cipós e pode liberar esporos
+                    de luz.
+                </del>
+                <ins>
+                    E além disso Groot também pode fazer crescer seus membros em formas de cipós e pode liberar esporos
+                    de luz.
+                </ins>
+            </p>
+            
+            <div id="lista">
+                <strong>Habilidades:</strong>
+                <ol>
+                    <li><span>Força;</span></li>
+                    <li><span>Cipós Groot Crescentes;</span></li>
+                    <li><span>Madeira Dura Perversa;</span></li>
+                    <li><span>Esporos de luz;</span></li>
+                    <li><span>Regeneração.</span></li>
+                </ol>
+            </div>
+
+            <!-- 
+                Caso eu queira fazer com que a tabela tenha contorno recorro ao "border"
+                Uma tabela tb tem um head e um body. - tag leva um t à frente -thead (tr.th), tbody
+                Se quiser unir célular udo a tag colspan, indicando a seguir o número de células que desejo juntar.
+                Tr-simboliza uma linha de célunas 
+            -->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Stats de Defesa</th>
+                        <th colspan="2">Stats de Ataque</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HP</td>
+                        <td>35,361</td>
+
+                        <td>Ataque</td>
+                        <td>2,234</td>
+                    </tr>
+
+                    <tr>
+                        <td>Armadura</td>
+                        <td>628 ~ 23%</td>
+
+                        <td><em>Crit Rate</em></td>
+                        <td>342 ~ 14%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Proficiência de Bloqueio</td>
+                        <td>2673 ~ 56%</td>
+
+                        <td>Dano Crítico</td>
+                        <td>525 ~ 150%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Energia de Resistência</td>
+                        <td>0</td>
+
+                        <td rowspan="3" colspan="2"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Resistência Física</td>
+                        <td>111 ~ 5%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Resistência Crítica</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </article>
+
+
+    </main>
+
+    <footer class="fundo">
+        <hr>
+        <p>Copyright ©️ &nbsp;<a href="https://pt.wikipedia.org/wiki/Groot " target="_blank">Groot</a>
+        </p>
+
+        <p>
+            Contacto: &nbsp;
+            <a href="mailto:up202107849@fba.up.pt?subject=I am Groot..." target="_blank">email</a>.
+        </p>
+
+        <p>Ana Campos, up202107849,<time>20/09/2023</time> </p>
+        <br>
+    </footer>
+ </body>
+
+</html>

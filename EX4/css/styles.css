@@ -1,0 +1,604 @@
+/* Ana Campos, up202107849, LDC, 2022/2023 */
+
+
+/* Código de reserva estética 
+background-image: url("https://placeit.net/assets/loader-easing.gif");
+background-size: cover; isto faz com que a imagem de fundo não se repita */
+
+/* Letra-Corpo: */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Letra-H1,H2: */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+    
+/* o "*" é um seletor universal, ou seja tudo que colocarmos dentro das suas chavetas é aplicar-se-á a todo ex:. body */
+*{
+   text-align:left;
+   box-sizing: content-box;
+}
+
+html{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+footer, header {
+    background-image: linear-gradient(to right ,transparent,white,white, transparent), url("https://i.pinimg.com/originals/43/7c/b7/437cb739d14912acd84d65ee853b9067.gif") !important;
+}
+body{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    background-color: #005667;
+}
+
+header, main{
+    margin: 0 7% 0 7%;
+}
+
+main{
+    display: block;
+    background-color: #005667;
+    padding-bottom: 10% !important;
+
+}
+
+section{
+    padding-bottom:10px ;
+}
+
+header{
+    padding-top: 1%;
+}
+
+footer{
+    margin-top: 60px !important;
+    text-align: center;
+}
+
+#lista{
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    position: relative;
+    float: right;
+    padding-left: 5px;
+    border-right: 0.2rem solid #1e2b2c;
+    border-left: 0.2rem solid #1e2b2c;
+    background-image: url("../images/estrelas.gif"), linear-gradient(to top, transparent, #04697d, transparent);
+    background-size: cover;
+    transform: rotate(6deg); 
+
+}
+
+#about{
+    background-image: url("../images/estrelas.gif");
+    padding-bottom: 50px;
+}
+ #about:hover{
+    background-image: url("https://wlri.my.canva.site/wlo-index/videos/aa5a11063bbf1c4435ae2c6f0ca1d38d.gif");
+    background-size: cover;
+}
+
+#audiquote{
+    padding: 0 !important;
+    margin: 0 !important;
+    border-right: 0.2rem solid #1e2b2c;
+    border-left: 0.2rem solid #1e2b2c;
+    background-image: url("../images/estrelas.gif"), linear-gradient(to top, transparent, #04697d, transparent);
+    background-size: cover;
+    text-align: center;
+
+}
+
+
+/* nav................................................................................................ */
+header{
+    margin-top: 0 !important;
+    position: relative;
+}
+
+.navbar{
+    font-family: 'Gabarito', Helvetica, sans-serif;
+    display: flex;
+    gap: 0.5%;
+    background-color: #1e2b2c;
+    /* background-image: url("https://i.pinimg.com/originals/e6/f7/d3/e6f7d34c80ef47899caaf3edb02e72c1.gif"); */
+
+}
+
+.navbar a{
+
+    font-family: 'Gabarito', Helvetica, sans-serif;
+    display: flex;
+    font-size: 9pt;
+    min-width: 8pt;
+    border:none;
+    outline: none;
+    color: white;
+    padding: 1% 1% 1% 1%;
+    margin: auto;
+    text-align: center !important;
+}
+
+.dropdown .dropb {
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    padding: auto !important;
+    display: inline-block;
+    background-color: inherit;
+    text-align: center;
+}
+
+.navbar a:hover .dropdown:hover .dropb {
+    background-color: #727b52;
+    
+}
+
+.dropd-content{
+    box-sizing: content-box;
+    display: none;
+    position: absolute;
+    background-color: #0fc6d7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(46, 102, 155);
+    z-index: 99; /* faz com o objeto fica encima dos outros aquando se encontra numa posição fixed, sticky, etc */
+
+}
+
+.dropd-content:hover{
+    display: flex;
+    z-index: 99; /* faz com o objeto fica encima dos outros aquando se encontra numa posição fixed, sticky, etc */
+
+}
+
+.dropd-content a{
+    color: #ffffff;
+    padding: 12pt 13pt;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 99; /* faz com o objeto fica encima dos outros aquando se encontra numa posição fixed, sticky, etc */
+
+}
+
+.dropd-content a:hover {
+    background-image: url("../images/texture-gif.gif");
+    display: block;
+    z-index: 99; /* faz com o objeto fica encima dos outros aquando se encontra numa posição fixed, sticky, etc */
+
+}
+
+nav a:hover{
+    text-decoration:underline;
+    text-shadow: #ffffff;
+}
+
+.dropdown:hover .dropd-content{ display:block;} 
+
+
+/* elementos textuais ------------------------------------------------------------------------------------------------------------ */
+h1{
+    margin: 0;
+    padding: 1%;
+    font-family: 'Black Ops One', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    -webkit-text-stroke-width: 0,5px;
+    -webkit-text-stroke-color: black;
+    font-size: 5.0rem;
+    font-weight: 800;
+    color: transparent;
+    
+    /* E com os seletores abaixo que consegui fazer com que o texto tenha como preenchimento uma imagem */
+    background-image: url("../images/texture-gif.gif");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+h2 {
+    font-family: 'Gabarito', Helvetica, sans-serif;
+    background-color: #005667;
+    width: 50%;
+    color: #1e2b2c;
+    z-index: 1; /* faz com o objeto fica encima dos outros aquando se encontra numa posição fixed, sticky, etc */
+    font-size: 25pt;
+    padding: 2px;
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 30px;
+}
+
+h3{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 10pt;
+    display: inline-block;
+    position:relative;
+    margin: 0;
+    box-sizing: content-box;
+    width: 50%;
+    min-width: 50ch;
+    max-width: 100ch;
+    right:0;
+    min-width: 8pt;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.final {
+    padding-bottom:5%;
+}
+
+footer p{
+    width: 100% !important;
+    text-align: center;
+    color:#1e2b2c;
+    font-size: 5pt;
+}
+
+aside{
+    box-sizing: content-box;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 12px;
+    width: 40%;
+    background-color: #005667;
+    float: right;
+    padding: 0 0 0.5rem 2rem ;
+    margin-top: 30px;
+    color: white;
+    display: block;
+    border-left: 0.2rem solid #1e2b2c;
+    border-right: 0.2rem solid #1e2b2c;
+    font-kerning: auto;
+    background-image: url("../images/estrelas.gif");
+    background-size: cover;
+
+    /* abaixo o mesmo roda o elemento de acordo com as medidas que decidimos */
+    transform: rotate(3deg); 
+}
+
+
+#about p{
+    width: 100% !important;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#filmes p{
+    width: 100% !important;
+}
+
+figcaption{
+    font-size: 7pt;
+    min-width: 5pt;
+    color: white;
+}
+
+blockquote{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Type Selectors----------------------------------------------------------------------------------------------- */
+em,strong{
+    color: #0fc6d7;
+}
+
+/* strong{} */
+
+/* linksssssssssssss---------- 
+o :visited significa aqueles links que já foram clicados
+o :link é o geral
+*/
+
+
+a:link{
+    color: #33335b;
+    font-style:normal;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: rgb(127, 114, 0);
+}
+
+nav a:visited, nav a:link {
+    color: white;
+} 
+
+/* Imagens Individuais .................................................................................... */
+/* Index page */
+
+
+header img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    display: block;
+
+}
+
+footer img{
+    width: 50%;
+    display: block;
+    position: relative;
+    position: fixed !important;
+    z-index:100%; /* para ficar "em cima" dos outros conteúdos*/
+}
+
+.capa img{
+    width: 100%;
+    margin: 0;
+    margin-top: auto;
+    padding: 0;
+    display: block;
+
+}
+
+.capa div{
+    margin: 0;
+    padding: 0;
+}
+
+
+#bio figure, #bio img{
+    width:100%;
+    margin: 0;
+    padding:0;
+    padding-bottom: 15px !important;
+
+}
+
+#bio figcaption{
+    margin: 0;
+    padding:0 !important;
+}
+
+#guardiões figure {
+    box-sizing: content-box;
+    width: 45% !important;
+    float: right !important;
+}
+
+#vin {
+    width: 100%;
+}
+
+/* elementos gerais çççççççççççççççççççççççççççççççççççççççççççç */
+
+hr{
+    margin: 0;
+    padding: 0;
+    border: 2px solid #1e2b2c;
+}
+
+/* botão do topo */
+#link-topo {
+    color: #ffffff;
+    background-color: #1e2b2c;
+    padding: 10px;
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #575a5a;
+}
+
+
+/* ol----------------------------------------- */
+ol{
+    list-style-type: upper-alpha;
+    text-align: center;
+}
+
+li{
+    /* cor dos dots */
+    color: #0fc6d7;
+    font-weight: bold;
+}
+
+li span{
+    /* cor do texto */
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+/* ul específico da página midia...................................................................... */
+
+#midias ul {
+    line-height: 1.6;
+    font-size: 10pt;
+}
+
+
+
+/* Tabela --------------------------------------------------------------------------------- */
+/* Segui o tutorial deste moço, queria uma tabela mais "bonitinha": https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l */
+
+table em{
+    color: #ffffff;
+}
+
+table {
+    border-collapse: collapse; /* sem bordas */
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.50);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead tr {
+    background-color: #1e2b2c;
+    background-image: url("../images/estrelas.gif");
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+th,td{
+    padding: 12px 15px;
+
+}
+
+tbody tr{
+    border-bottom: 1px solid #ffffff;
+    background-color: #08768b;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #005667;
+    background-image: url("https://placeit.net/assets/loader-easing.gif");
+    background-size: cover;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 3px solid #1e2b2c ;
+}
+
+#poderes table{
+    margin-top: 5%;
+}
+
+/* audio................................................................................................................. */
+
+/* panel */
+audio::-webkit-media-controls-panel {
+    background-color: #1e2b2c;
+}
+
+/* icones */
+audio::-webkit-media-controls-play-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+  
+audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* texto do audio */
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+}
+
+#audioquote figcaption{
+    text-align: center;
+}
+
+/* Video+Iframe organização ................................................................................................... */
+video, iframe {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+
+}
+
+video{
+width: 75%;
+}
+
+iframe{
+width: 75%;
+height: 100%;
+}
+
+#trailers video {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#trailers{
+    background-image: url("../images/estrelas.gif");
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cursor, porque não??? -------------------------------------------------------------------------------------------- */
+
+html{
+    /* cursor porque não? - o auto é para o default e o pointer é para quando apontamos algo - só aceita .svg */
+    cursor:url("../graphics/cursor-01.svg"), default;
+    /* cursor:url("../graphics/cursor-02.svg"), pointer; */
+}
+
+
+/* este ainda não funciana a 100%... ....(13/10/2023) Continua a não funcionar*/
+a, video, audio, .org ul{
+    cursor:url("../graphics/cursor-02.svg"), auto;
+}
+
+
+
+
+
+
+
+
+/* Anotações:
+-Sinceramente porque não existe uma determinação que centra logo os objetos, tive que quebrar a cabeça para depois descobrir que 
+para imagens/videos/audios podemos só usar "text-align:center;" e está direitinho. Contudo, quando é para as minhas comadres tabelas
+tenho de recorrer às margins... (margin-left:auto; + margin-right:auto). 
+
+-Conselho para futuro: Não sabes como fazer, coloca "background-color: xxxx;" e aí percebes a área que consegues controlar. 
+
+-Padding - um dos melhores ajudantes para fazer espaçamento (creio abusar demais dele)
+
+*/

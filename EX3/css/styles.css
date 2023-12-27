@@ -1,0 +1,428 @@
+
+/* Letra-Corpo: */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Letra-H1,H2: */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+    
+/* o "*" é um seletor universal, ou seja tudo que colocarmos dentro das suas chavetas é aplicar-se-á a todo ex:. body */
+*{
+   margin: auto 0%;
+   margin-top: 15;
+   text-align:left;
+}
+
+html{
+    margin: auto 6%;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+main,body{ 
+    color: rgb(0, 0, 0);
+}
+
+article{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+section{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: xx-small;
+    font-size-adjust: none;
+    font-weight: 200;
+}
+
+
+
+#Biografia{
+    padding-top: 0% !important;
+}
+
+
+
+/* "Caixinhas" para as tabelas */
+#PodereseHabilidades{
+    padding-top: 0% !important;
+    background-color: rgb(227, 233, 240);
+    border-radius: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#EdiçõesColecionáveis{
+    padding-top: 0%;
+    padding-bottom: 20px;
+    background-color: rgb(227, 233, 240);  
+    border-radius: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#audiquote {
+    background-color: rgb(245, 238, 230);
+    border-radius: 24px;
+    border-style: dotted;
+    border-color: rgb(210, 225, 243);
+    border-width: 15px;
+    
+    /* contextualizar */
+    padding-top: 5px;
+    padding-bottom: 20px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+/* Texto diferente * --------------------------------------------------------------------------------------------------/
+
+
+/* elementos textuais ------------------------------------------------------------------------------------------------------------ */
+h1{
+    text-align: center !important;
+    border-radius: 120px;
+    padding: 2%;
+    background-image: url("https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3VhcmRpYW5zJTIwb2YlMjB0aGUlMjBnYWxheHl8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+    color: white;
+    font-family: 'Archivo Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+
+}
+
+h2 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight:500;
+    background-color: rgb(154, 172, 199);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h3{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(53, 71, 142);
+    padding-bottom: 0%;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+figcaption{
+    padding-top: 0px;
+    text-align: center;
+    font-size: 10px;
+}
+
+blockquote{
+    text-align: center;
+    color: rgb(53, 71, 142) ;
+    font-size: large;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0%;
+}
+
+/* Type Selectors----------------------------------------------------------------------------------------------- */
+em,strong{
+    color: rgb(90, 90, 107);
+}
+
+strong{
+    font-size: 14px;
+}
+
+/* linksssssssssssss---------- 
+o :visited significa aqueles links que já foram clicados
+o :link é o geral
+*/
+a:link{
+    color: #33335b;
+    font-style:normal;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: rgb(127, 114, 0);
+}
+
+/*Aside..............................................................................................*/
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(154, 172, 199) !important;
+    padding-bottom: 0.5rem;
+    border-radius: 25px;
+}
+
+dl,dt,dd {
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/* Parte do Navegador ------------------------------------------------------- */
+nav{
+    text-align: center;
+    margin: auto 2%;
+}
+
+.topnav{
+    margin: auto 2%;
+    overflow: hidden;
+    display: table-row-group;
+}
+
+.tops ul{
+    padding-bottom: 18px;
+    padding-top: 18px;
+    list-style-type:circle;
+    padding-left: 0;
+    border-radius: 120px;
+}
+
+.top {
+    padding: 5px;
+    margin: auto 2%;
+    display: inline;
+}
+
+/* nav texto ........................................................................ */
+.org a:hover {
+    color: rgb(154, 172, 199);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.org ul{
+    position: fixed;
+    bottom: 0;
+    width: 100%;}
+
+.org li{
+    font-family: 'Archivo Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+/* Imagens Individuais----------------------------------------------------------------- */
+.Vetor{
+    width: 15%;
+    padding-inline: 20px;
+}
+
+.a{
+    width: 15%;
+}
+
+.b{
+    padding-top: 2%;
+    width: 100%;
+    margin: auto 0% !important;
+    object-position:right;
+    border-radius: 40px;
+    
+}
+
+.c img{
+    padding-top: 18px;
+   width: 100%;
+   border-radius: 40px;
+   display: block;
+}
+
+.d img{
+    border-radius: 40px;
+    width: 30%;
+}
+
+.e{
+    width:30%;
+    border-radius: 40px;
+}
+
+figure{
+    text-align: center;
+}
+
+
+
+
+/* Video+Iframe organização ................................................................................................... */
+video, iframe {
+    text-align: center;
+    border-radius: 40px;
+
+}
+
+video{
+width: 75%;
+}
+
+iframe{
+width: 75%;
+height: 75%; 
+}
+
+/* audio................................................................................................................. */
+
+/* panel */
+audio::-webkit-media-controls-panel {
+    background-color: rgb(145, 174, 236);
+}
+
+/* icones */
+audio::-webkit-media-controls-play-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+  
+audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* texto do audio */
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+}
+
+/* ul/ol----------------------------------------------------------------------------------------------------- */
+ul {
+    list-style:disc;
+}
+
+ol{
+    list-style-type: upper-alpha;
+}
+
+li{
+    /* cor dos dots */
+    color: rgb(150, 156, 211);
+    font-weight: bold;
+}
+
+li span{
+    /* cor do texto */
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+/* Tabela --------------------------------------------------------------------------------- */
+/* Segui o tutorial do MDN para desenvolver esta tabela (admito que a versão em html é mais simples) */
+
+table, td { 
+    border: 1px solid rgb(75, 79, 75);
+    border-radius: 2px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+}
+
+table{
+    text-align: center;
+    table-layout: fixed;
+
+    /* centrar */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead, tfoot{
+    /* border: 1px solid #FFF; */
+    border:  1px solid rgb(75, 79, 75);
+    border-radius: 2px;
+    background-color: rgb(210, 212, 231);
+    color: rgb(35, 50, 27);
+}
+
+td,tr,th {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* Cursor, porque não??? -------------------------------------------------------------------------------------------- */
+
+html{
+    /* cursor porque não? - o auto é para o default e o pointer é para quando apontamos algo - só aceita .svg */
+    cursor:url("../graphics/cursor-01.svg"), default;
+    /* cursor:url("../graphics/cursor-02.svg"), pointer; */
+}
+
+
+/* este ainda não funciana a 100%... */
+a, video, audio, .org ul{
+    cursor:url("../graphics/cursor-02.svg"), auto;
+}
+
+
+
+
+
+
+
+
+/* Anotações:
+-Sinceramente porque não existe uma determinação que centra logo os objetos, tive que quebrar a cabeça para depois descobrir que 
+para imagens/videos/audios podemos só usar "text-align:center;" e está direitinho. Contudo, quando é para as minhas comadres tabelas
+tenho de recorrer às margins... (margin-left:auto; + margin-right:auto). 
+
+-Conselho para futuro: Não sabes como fazer, coloca "background-color: xxxx;" e aí percebes a área que consegues controlar. 
+
+-Padding - um dos melhores ajudantes para fazer espaçamento (creio abusar demais dele)
+
+*/
